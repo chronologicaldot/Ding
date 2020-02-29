@@ -1,0 +1,31 @@
+# Introduction
+
+BellMaker is intended to be a simple Qt application for creating bell waveforms. It does not produce .wav, .mpg, or other audio files but should produce a special file with parameters for generating the bell.
+
+The codebase is written in C++11 and uses Qt 5.5.
+
+## Bell File Format
+
+Each bell consists of "waves" with parameters that determine how it varies from a base wave function (sine, cosine, saw, etc). These waves are added together to form the final wave. Each wave can also have sub-parameters that control its volume, shift, etc at certain points in playback time. The entire bell can be exported as an XML file that provides the parameters for recreating the bell.
+
+Playback duration for the entire bell is in microseconds. All other times are limited to this time. By default, all other times will be in proportion to the full time and will thus range from 0 to 1.0000000, allowing faster or slower playback.
+
+Volumes are given in terms of relative full scale of 0 to 1 (max) of the entire bell.
+
+### Example Bell:
+
+<bell duration="2000000"> <!-- 2 second bell -->
+	<wave base="sine" volume="1">
+		<volume time="0" value="1">
+		<volume time="0.5" value="0.3">
+		<volume time="1" value="0">
+	</wave>
+	<wave base="saw" volume="0.3">
+		<volume time="0" value="0">
+		<volume time="0.000001" value="1">
+		<volume time="1" value="0"> <!-- Gradual fadeout -->
+	</wave>
+	<!-- Total volume control -->
+	<volume time="0" value="1">
+	<volume time="1" value="0"> <!-- Complete mute -->
+</bell>

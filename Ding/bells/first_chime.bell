@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<bell sample_rate="44100" >
+	<volume_span smooth="false" >
+	</volume_span>
+	<wave name="Base Wave" duration="1" frequency="720" phase="0.201" >
+		<volume_span smooth="true" >
+			<volume time="0" volume="0" >
+			</volume>
+			<volume time="0.14" volume="0.736667" >
+			</volume>
+			<volume time="0.285" volume="0.34" >
+			</volume>
+			<volume time="0.425" volume="0.2" >
+			</volume>
+			<volume time="0.568333" volume="0.166667" >
+			</volume>
+			<volume time="0.723333" volume="0.16" >
+			</volume>
+			<volume time="0.856667" volume="0.08" >
+			</volume>
+			<volume time="1" volume="0" >
+			</volume>
+		</volume_span>
+		<sample_source formtype="1" >
+		</sample_source>
+	</wave>
+	<wave name="High Front" duration="1" frequency="1440" phase="0" >
+		<volume_span smooth="false" >
+			<volume time="0" volume="0" >
+			</volume>
+			<volume time="0.035" volume="0.536667" >
+			</volume>
+			<volume time="0.343333" volume="0.183333" >
+			</volume>
+			<volume time="1" volume="0" >
+			</volume>
+		</volume_span>
+		<sample_source formtype="3" >
+		</sample_source>
+	</wave>
+	<wave name="Bass" duration="1" frequency="360" phase="0" >
+		<volume_span smooth="true" >
+			<volume time="0" volume="0" >
+			</volume>
+			<volume time="0.135" volume="0.17" >
+			</volume>
+			<volume time="0.353333" volume="0.13" >
+			</volume>
+			<volume time="0.551667" volume="0.12" >
+			</volume>
+			<volume time="0.778333" volume="0.0533333" >
+			</volume>
+			<volume time="1" volume="0" >
+			</volume>
+		</volume_span>
+		<sample_source formtype="1" >
+		</sample_source>
+	</wave>
+	<wave name="Super Bright" duration="1" frequency="2880" phase="0" >
+		<volume_span smooth="false" >
+			<volume time="0" volume="0" >
+			</volume>
+			<volume time="0.0183333" volume="0.33" >
+			</volume>
+			<volume time="0.161667" volume="0.21" >
+			</volume>
+			<volume time="0.63" volume="0.0833333" >
+			</volume>
+			<volume time="1" volume="0" >
+			</volume>
+		</volume_span>
+		<sample_source formtype="1" >
+		</sample_source>
+	</wave>
+</bell>

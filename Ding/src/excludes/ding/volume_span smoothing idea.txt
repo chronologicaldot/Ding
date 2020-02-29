@@ -1,0 +1,35 @@
+// In the class header:
+
+	volume_t  getSmoothSample2( play_t );
+
+	volume_t  tv_abs( play_t );
+
+// In the .cpp file:
+
+volume_t
+VolumeSpan::getSmoothSample2( play_t  time ) {
+	// The volume of each point is determined by how close the time is to the OTHER points.
+	int  k = 0;
+	int  i;
+	volume_t  power;
+	volume_t  output;
+	for (; k < volumes.size(); ++k) {
+		power = volumes[k].volume;
+		for(i=0; i < volumes.size(); ++i) {
+			if ( i == k ) continue;
+			//power *= tv_abs(1. - (time / volumes[i].time));
+			power *= 1. - (1. / (1. + tv_abs(time - volumes[k].time)));
+		}
+		//power *= 1. / (1. + tv_abs(time - volumes[k].time));
+		output += power;
+	}
+	return output;
+}
+
+volume_t
+VolumeSpan::tv_abs( play_t  t ) {
+	if ( t < 0 )
+		return static_cast<volume_t>(-t);
+	else
+		return static_cast<volume_t>(t);
+}

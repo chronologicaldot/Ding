@@ -1,0 +1,2 @@
+This part of the code is stand-alone from most dependencies but does require the standard library.
+The codebase is written in C++11, using nullptr, shared_ptr, and the "using" keyword for alias.

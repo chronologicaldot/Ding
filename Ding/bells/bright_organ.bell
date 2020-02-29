@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<bell sample_rate="44100" >
+	<volume_span >
+	</volume_span>
+	<wave name="Base Wave" duration="1" frequency="720" phase="0" >
+		<volume_span >
+			<volume time="0" volume="0" >
+			</volume>
+			<volume time="0.106667" volume="0.313333" >
+			</volume>
+			<volume time="0.19" volume="0.176667" >
+			</volume>
+			<volume time="0.55" volume="0.0733333" >
+			</volume>
+			<volume time="1" volume="0" >
+			</volume>
+		</volume_span>
+		<sample_source formtype="1" >
+		</sample_source>
+	</wave>
+	<wave name="2" duration="1" frequency="360" phase="0" >
+		<volume_span >
+			<volume time="0" volume="0" >
+			</volume>
+			<volume time="0.131667" volume="0.236667" >
+			</volume>
+			<volume time="0.565" volume="0.133333" >
+			</volume>
+			<volume time="1" volume="0" >
+			</volume>
+			<volume time="1" volume="0" >
+			</volume>
+		</volume_span>
+		<sample_source formtype="1" >
+		</sample_source>
+	</wave>
+	<wave name="3" duration="1" frequency="900" phase="0" >
+		<volume_span >
+			<volume time="0" volume="0" >
+			</volume>
+			<volume time="0.0716667" volume="0.346667" >
+			</volume>
+			<volume time="0.265" volume="0.15" >
+			</volume>
+			<volume time="1" volume="0" >
+			</volume>
+		</volume_span>
+		<sample_source formtype="1" >
+		</sample_source>
+	</wave>
+	<wave name="4" duration="1" frequency="180" phase="0" >
+		<volume_span >
+			<volume time="0" volume="0" >
+			</volume>
+			<volume time="0.325" volume="0.183333" >
+			</volume>
+			<volume time="1" volume="0" >
+			</volume>
+			<volume time="1" volume="0" >
+			</volume>
+		</volume_span>
+		<sample_source formtype="1" >
+		</sample_source>
+	</wave>
+	<wave name="5" duration="1" frequency="1440" phase="0.5" >
+		<volume_span >
+			<volume time="0" volume="0" >
+			</volume>
+			<volume time="0.0633333" volume="0.36" >
+			</volume>
+			<volume time="0.161667" volume="0.156667" >
+			</volume>
+			<volume time="1" volume="0" >
+			</volume>
+		</volume_span>
+		<sample_source formtype="1" >
+		</sample_source>
+	</wave>
+</bell>

@@ -1,0 +1,1 @@
+Add jack support (needs Jack libraries)

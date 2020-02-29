@@ -1,0 +1,14 @@
+I would like a copy of SoundBox that is extended to have:
+- Support for input streams (perhaps using a callback for converting input stream sound byte type to the type requested by the buffer as well as performing the copy to the buffer itself... maybe.
+- Support for multiple output streams.
+- Support for multiple channels.
+
+NOTE: There is no need to support swapping sources for an output stream because anything outside SoundBox can use its loadChannelBuffer() method, and therefore, the swapping of sources for output can be done elsewhere.
+Likewise for inputs.
+
+NOTE: There is no need for having multiple devices. Only one device should ever be used by an application at one time anyways, but if not, I would need to create an array of devices and only let one be active at a time. But that's really unnecessary.
+
+
+IMPORTANT:
+A better wrapper would utilize the streamTime to determine when things should start playing. Since this is automatically provided by RtAudio, it would be nice to use it. It might be particularly useful for an Irrlicht game music / sound playback system that needs to play things at a particular time.
+Audio might be able to go on a separate thread from Irrlicht.

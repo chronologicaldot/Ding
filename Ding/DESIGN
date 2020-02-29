@@ -1,0 +1,5 @@
+I messed it up. I keep trying to create the buffer alongside the whole wave. This isn't necessary.
+Instead, I simply need mathematical functions that accept decimal values and return the appropriate value at that slot.
+Then these functions can be combined to extract points that form a final buffer for playback.
+
+My first problem came with me trying to auto-generate points for sampling. This overcomplicates the problem.

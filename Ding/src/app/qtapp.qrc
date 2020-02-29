@@ -1,0 +1,13 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+	<!-- Removed until created
+	<file>img/new.png</file>
+	<file>img/open.png</file>
+	<file>img/save.png</file>
+	<file>img/add_wave.png</file>
+	<file>img/delete_wave.png</file>
+	<file>img/edit_wave.png</file>
+	<file>img/edit_volume.png</file>
+	-->
+</qresource>
+</RCC>

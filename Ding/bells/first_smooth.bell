@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<bell sample_rate="44100" >
+	<volume_span smooth="false" >
+	</volume_span>
+	<wave name="Base Wave" duration="1" frequency="720" phase="0" >
+		<volume_span smooth="true" >
+			<volume time="0" volume="0" >
+			</volume>
+			<volume time="0.131667" volume="1" >
+			</volume>
+			<volume time="0.3" volume="0.24" >
+			</volume>
+			<volume time="0.47" volume="0.136667" >
+			</volume>
+			<volume time="0.671667" volume="0.0566667" >
+			</volume>
+			<volume time="0.833333" volume="0.0233333" >
+			</volume>
+			<volume time="1" volume="0" >
+			</volume>
+		</volume_span>
+		<sample_source formtype="1" >
+		</sample_source>
+	</wave>
+</bell>

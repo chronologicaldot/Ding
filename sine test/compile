@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Attemping to compile main.cpp..."
+g++ -Wall src/main.cpp ../rtaudio/RtAudio.h ../rtaudio/RtAudio.cpp -I../rtaudio -D__LINUX_ALSA__ -o sinetest -lasound -lpthread
+

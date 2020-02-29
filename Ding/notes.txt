@@ -1,0 +1,12 @@
+Working with std::shared_ptr
+https://stackoverflow.com/questions/25405034/stdshared-ptr-of-abstract-class-to-instantiate-derived-class
+
+AUDIO NOTE:
+One of the problems with my audio was that I was using the magic zero value: Where the number of samples per second equals the frequency. It just so happens that when you do this, you get exactly one wave cycle per sample, meaning that the start of the wave occurs every sample, which gives you a value of zero. Not to mention, such a frequency is so high, you couldn't hear it anyway.
+
+BUG NOTE: (Fixed)
+Calling std::vector::resize() does NOT work like irr::core::array::reallocate(). Instead, it changes the size and trying to use operator[] to set the values will lead to free memory reallocation errors:
+*** Error in `./Ding': free(): invalid next size (fast): 0x0909ea70 ***
+OR
+*** Error in `./Ding': munmap_chunk(): invalid pointer: 0x08cf6cb8 ***
+
